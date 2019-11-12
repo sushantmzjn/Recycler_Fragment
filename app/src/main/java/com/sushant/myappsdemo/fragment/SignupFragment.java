@@ -62,6 +62,16 @@ public class SignupFragment extends Fragment {
                String Password = password.getText().toString().trim();
                String Cpassword = CPassword.getText().toString().trim();
 
+                if (TextUtils.isEmpty(Username)){
+                    usrname.setError("Enter Username"); return;
+                }
+                if (TextUtils.isEmpty(Password)){
+                    password.setError("Enter password"); return;
+                }
+                if (TextUtils.isEmpty(Cpassword)){
+                    CPassword.setError("Confirm Password"); return;
+                }
+
                if (!TextUtils.isEmpty(Username)&& !TextUtils.isEmpty(Username) && !TextUtils.isEmpty(Username)){
                    if (!Password.equals(Cpassword)){
                        CPassword.setError("Password didn't matched");
@@ -84,17 +94,6 @@ public class SignupFragment extends Fragment {
                        password.setText("");
                        CPassword.setText("");
                    }
-               }else {
-                   if (TextUtils.isEmpty(Username)){
-                       usrname.setError("Enter Username");
-                   }
-                   if (TextUtils.isEmpty(Password)){
-                       password.setError("Enter password");
-                   }
-                   if (TextUtils.isEmpty(Cpassword)){
-                       CPassword.setError("Confirm Password");
-                   }
-                   return;
                }
 
             }
