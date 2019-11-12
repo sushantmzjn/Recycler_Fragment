@@ -9,11 +9,13 @@
         android:id="@+id/etnum1"
         android:padding="20dp"
         android:hint="Enter first no."
+        android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/etnum2"
         android:padding="20dp"
+        android:inputType="number"
         android:layout_width="match_parent"
         android:hint="Enter second no."
         android:layout_height="wrap_content"/>

@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.sushant.myappsdemo.ui.home.HomeFragment"
+        android:name="com.sushant.myappsdemo.ui.areaofcircle.HomeFragment"
         android:label="ADD"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.sushant.myappsdemo.ui.gallery.GalleryFragment"
+        android:name="com.sushant.myappsdemo.ui.add.GalleryFragment"
         android:label="Area of Circle"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.sushant.myappsdemo.ui.slideshow.SlideshowFragment"
+        android:name="com.sushant.myappsdemo.ui.contacts.SlideshowFragment"
         android:label="Contacts"
         tools:layout="@layout/fragment_slideshow" />
 
