@@ -92,7 +92,7 @@ public class SignupFragment extends Fragment {
                        password.setError("Enter password");
                    }
                    if (TextUtils.isEmpty(Cpassword)){
-                       CPassword.setError("Enter Password");
+                       CPassword.setError("Confirm Password");
                    }
                    return;
                }
